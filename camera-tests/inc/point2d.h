@@ -1,26 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   camera.h                                           :+:    :+:            */
+/*   point2d.h                                          :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: eandela <eandela@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2025/02/28 11:56:47 by eandela       #+#    #+#                 */
-/*   Updated: 2025/03/01 17:02:54 by eandela       ########   odam.nl         */
+/*   Created: 2025/03/01 21:32:33 by eandela       #+#    #+#                 */
+/*   Updated: 2025/03/01 21:33:01 by eandela       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "point3d.h"
-
-typedef struct s_camera
+typedef struct s_point2d
 {
-	t_point3d	position;
-	t_point3d	look_direction;
-	t_point3d	up;
-	t_point3d	right;
-	double		h_fov;
-	double		v_fov;
-	int			height;
-	int			width;
-	double		aspect_ratio;
-}	t_camera;
+	int x;
+	int y;
+}	t_point2d;
